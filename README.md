@@ -4,14 +4,12 @@
 
 xuri is a function that parses a uri into an object based on its scheme.
 
-xuri(uri [,scheme]);
-
 ``` 
 object = xuri(uri string [, scheme string]);
 ```
 ####Params
-uri = string to be f
-scheme = optional scheme to be specified
+- uri = string to be parsed
+- scheme = optional scheme to be specified
 
 
 ``` javascript
