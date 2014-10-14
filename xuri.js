@@ -6,7 +6,7 @@
  * Released under MIT license
  *
 */
-function parsuri(uri, scheme){
+function xuri(uri, scheme){
 	
 	/***
 	** step 0: predefine variables & recurring functions
@@ -61,13 +61,10 @@ function parsuri(uri, scheme){
 		return ra;
 	}
 	
-
-
 	/***
 	** step 1: parse universal components (RFC 3986)
 	** <scheme> : <heirarchical> [? <query> ] [# <fragment>]
 	*/
-
 	// get scheme and remove
 	if(uri.match(/^[a-z][a-z0-9\.\+\-]+\:/i)){
 		u.scheme = uri.substring(0, uri.indexOf(':')).toLowerCase();
