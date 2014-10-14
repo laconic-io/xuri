@@ -4,6 +4,16 @@
 
 xuri is a function that parses a uri into an object based on its scheme.
 
+xuri(uri [,scheme]);
+
+``` 
+object = xuri(uri string [, scheme string]);
+```
+####Params
+uri = string to be f
+scheme = optional scheme to be specified
+
+
 ``` javascript
 // call uri to be parsed
 var uri = xuri('https://sub.github.com/laconic/io?par1=abc&par2=def');
